@@ -1,0 +1,147 @@
+{
+	"monster": [
+		{
+			"name": "Abyssal Custodian",
+			"source": "SPCM",
+			"page": 279,
+			"srd": false,
+			"size": [
+				"G"
+			],
+			"type": "Aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 313,
+				"formula": "19d20 + 114"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"climb": 40
+			},
+			"str": 27,
+			"dex": 17,
+			"con": 22,
+			"int": 5,
+			"wis": 20,
+			"cha": 19,
+			"save": {
+				"wis": "+11",
+				"cha": "+10"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 21,
+			"resist": [
+				"cold",
+				"lightning",
+				{
+					"resist":[
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				{
+					"conditionImmune":[
+						"frightened",
+						"poisoned"
+					]
+				}
+			],
+			"languages": [
+				"Aklo"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Dimensional Acclimation",
+					"entries": [
+						"If the Abyssal Custodian enters combat via a portal, it has advantage on the initiative roll. It can always choose not to be transported by spells or effects that would banish or otherwise transport it."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/day).",
+					"entries": [
+						"If the Abyssal Custodian fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Abyssal Custodian makes three attacks: one with its bite and two with its slams."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d12 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}17 ({2d8 + 8}) bludgeoning damage. If the target is a creature, the Abyssal Custodian can force it to make a {@dc 22} Strength shaving throw. On a failed save, the target is pushed 20 feet away from the Abyssal Custodian."
+					]
+				},
+				{
+					"name": "Create Portal {@recharge4}",
+					"entries": [
+						"The Abyssal Custodian conjures an invisible portal linking an unoccupied space it can see within 60 feet to a precise location within 1 mile. The portal is a 30-foot circular opening, which it can orient in any direction. The portal lasts for 1 minute. Each portal has a front and a back. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the unoccupied place nearest the other portal. The portal is opaque. Dispel magic can dispel the portal as if it were an 8th-level spell."
+					]
+				},
+				{
+					"name": "Dimensional Plummet",
+					"entries": [
+						"The Abyssal Custodian uses Create Portal if it is available, placing one portal below itself and placing th other portal up to 200 feet above a point on the ground that it can see. It falls to the chose point, taking 1d6 bludgeoning damage per 10 feet it fell (it has resistance to this damage), and each creature within a 10-foot-radius circle centered on the chosen point must make a DC 20 Dexterity saving throw, taking 1d6 bludgeoning damage per 10 feet the Abyssal Custodian fell on a failed save, or half as much on a successful one. Each Huge or larger creature that succeeded is pushed to the nearest open space adjacent to the Abyssal Custodian. Each Medium or smaller creature that failed is knocked prone and restrained. This restrained condition ends when the Abyssal Custodian is no longer atop the creature or when a restraine creature succeeds on a {@dc 18} Strength (Athletics) or Dexterity (Acrobatics) check as an action. The Abyssal Custodian can then make a slam attack as a bonus action."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Portal Step (Costs 2 Actions)",
+					"entries": [
+						"The Abyssal Custodian uses Create Portal if the feature is available, creating one of the portals in the nearest unoccupied space. The Abyssal Custodianthen moves up to half its speed through the portal."
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"The Abyssal Custodian makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"The Abyssal Custodian makes a slam attack."
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true
+		}
+	]
+}
